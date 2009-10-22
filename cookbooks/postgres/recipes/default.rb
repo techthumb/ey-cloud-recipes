@@ -20,7 +20,7 @@ link "setup-postgresq-db-my-symlink" do
 end
 
 execute "setup-postgresql-db-symlink" do
-  command "rm -rf /var/lib/postgresql; ln -s /data/postgresql /var/lib/postgresql"
+  command "rm -rf /var/lib/postgresql; ln -s /db/postgresql /var/lib/postgresql"
   action :run
   only_if "if [ ! -L #{postgres_root} ]; then exit 0; fi; exit 1;"
 end

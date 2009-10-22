@@ -18,3 +18,6 @@ end
 
 #uncomment to turn on memcached
 # require_recipe "memcached"
+
+#uncomment to turn on postgres
+require_recipe "postgres"

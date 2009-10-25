@@ -21,3 +21,4 @@ end
 
 #uncomment to turn on postgres
 require_recipe "postgres"
+require_recipe "timezone"
